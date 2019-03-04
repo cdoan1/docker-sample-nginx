@@ -8,6 +8,8 @@ spec:
   containers:
   - name: nginx-sample
     image: dhubchris/nginx-sample:0.0.1
+    ports:
+    - containerPort: 80
     volumeMounts:
     - name: "report"
       mountPath: "/tmp"
