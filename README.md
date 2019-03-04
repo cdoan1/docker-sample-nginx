@@ -11,7 +11,7 @@ docker run -p 3000:80 -name nginx-sample dhubchris/nginx-sample:0.0.1
 ```
 
 ```
-curl http://localhost:4007
+curl http://localhost:3000
 
 <html>
 <body>
