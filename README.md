@@ -10,3 +10,7 @@ docker push dhubchris/nginx-sample:0.0.1
 docker run -p 3000:80 -name nginx-sample dhubchris/nginx-sample:0.0.1
 ```
 
+# create pod / service
+
+
+
