@@ -1,0 +1,20 @@
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-sample
+spec:
+  containers:
+  - name: nginx-sample
+    image: dhubchris/nginx-sample:0.0.1
+    volumeMounts:
+    - name: "report"
+      mountPath: "/tmp"
+      readOnly: false
+  imagePullSecrets:
+  - name: "infra-registry-key"
+  volumes:
+  - name: "report"
+    hostPath:
+      path: "/tmp"
